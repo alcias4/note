@@ -38,6 +38,7 @@ main{
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 .botones > a {
@@ -46,10 +47,26 @@ main{
     background-color: #ad1fe9;
     border-radius: 8px;
     width: 150px;
-    text-align: center;
+    text-align: right;
     padding-top: 5px;
+    position: relative;
+    padding-right: 20px;
+    margin-right: 20px;
 }
 
+.botones > a:hover{
+    opacity: 0.8;
+
+}
+
+.botones > a > i{
+    position: absolute;
+    left: 10px;
+}
+
+.botones > h2{
+    margin-left: 20px;
+}
 
 .id{
     text-align: center;
@@ -58,9 +75,19 @@ main{
 
 .titulo-btn{
     margin-bottom: 20px;
+    position: relative;
 }
+.titulo-btn>i{
+    color: #101a35;
+    font-size: 12px;
+    position: absolute;
+    bottom: 2px;
+    
+}
+
 .titulo{
     text-transform: uppercase;
+    margin-left: 20px;
 }
 
 .descripcion{
@@ -75,6 +102,7 @@ main{
     margin-bottom: 10px;
     width: 100%;
     justify-content: end;
+    
 }
 
 .btn-r > a ,form{
@@ -87,6 +115,12 @@ main{
     background-color: #101a35;
     border-radius: 10px;
     cursor: pointer;
+    margin-right: 10px;
+    
+}
+
+.btn-r > a:hover ,form:hover{
+    opacity: 0.8;
 }
 
 .btn-r > form >button{
@@ -94,6 +128,7 @@ main{
     border: none;
     background-color: #101a35;
     cursor: pointer;
+    font-size: 15px;
 
 }
 

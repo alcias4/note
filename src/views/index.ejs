@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/a4e61d7a9e.js" crossorigin="anonymous"></script>
     
     <title>Inicio</title>
 </head>
@@ -13,13 +14,14 @@
             
             <section class="botones">
                 <h2>NOTAS</h2>
-                <a href="/product/registra">Agregar nota</a>
+                <a href="/product/registra"><i class="fa-solid fa-circle-plus"></i>Agregar nota</a>
 
             </section>
             <% for(let notas = 1; notas < ps.length; notas ++) { %>
                 <section class="notas">
                     <section class="h">
                         <div class="titulo-btn">
+                            <i class="fa-sharp fa-solid fa-circle"></i>
                             <label class="titulo"><%= ps[notas].titulo  %> </label>
                         </div>
                         <div class="descripcion">
@@ -27,9 +29,9 @@
                         </div>
                     </section>
                     <div class="btn-r">
-                        <a href="/product/editar/<%=ps[notas].id %>">editar</a>
+                        <a href="/product/editar/<%=ps[notas].id %>">Editar</a>
                         <form action="/product/eli/<%=ps[notas].id %>?_method=DELETE" method="POST">
-                            <button type="submit">eliminar</button>
+                            <button type="submit">Eliminar</button>
                         </form>
                     </div>
                 </section>

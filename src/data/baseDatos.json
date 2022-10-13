@@ -8,5 +8,10 @@
   "id": 2,
   "titulo": "spring 4",
   "description": "Entrega para el 20 de octubre."
+ },
+ {
+  "id": 3,
+  "titulo": "Rutina del gym ",
+  "description": "lunes = pecho y hombro ; miercoles = piernas ; viernes = espalda y brazos."
  }
 ]

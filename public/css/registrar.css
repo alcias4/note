@@ -46,6 +46,10 @@ main{
     padding: 4px;
 }
 
+#volver:hover{
+    background-color: #cc53ff;
+}
+
 .titulo{
     display: flex;
     flex-direction: column;
@@ -102,11 +106,14 @@ h2{
     background-color: #101a35;
     color: #fff;
     border: none;
-    padding: 7px;
+    padding: 10px;
     border-radius: 10px;
     cursor: pointer;
     text-transform: lowercase;
 }
 
+.btn-a > button:hover{
+    background-color: #3b559b;
+}
 
 
