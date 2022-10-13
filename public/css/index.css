@@ -50,7 +50,7 @@ main{
     text-align: right;
     padding-top: 5px;
     position: relative;
-    padding-right: 20px;
+    padding-right: 7px;
     margin-right: 20px;
 }
 
@@ -62,6 +62,7 @@ main{
 .botones > a > i{
     position: absolute;
     left: 10px;
+    padding-top: 2px;
 }
 
 .botones > h2{
@@ -81,7 +82,7 @@ main{
     color: #101a35;
     font-size: 12px;
     position: absolute;
-    bottom: 2px;
+    bottom: 5px;
     
 }
 
@@ -117,6 +118,10 @@ main{
     cursor: pointer;
     margin-right: 10px;
     
+}
+
+.btn-r > a {
+    font-size: 15px;
 }
 
 .btn-r > a:hover ,form:hover{
