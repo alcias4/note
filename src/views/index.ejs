@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <title>Inicio</title>
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            
+            <section class="botones">
+                <h2>NOTAS</h2>
+                <a href="/product/registra">Agregar nota</a>
+
+            </section>
+            <% for(let notas of ps) { %>
+                <section class="notas">
+                    <section class="h">
+                        <div class="titulo-btn">
+                            <label class="titulo"><%=notas.titulo  %> </label>
+                        </div>
+                        <div class="descripcion">
+                            <p><%=notas.description%></p>
+                        </div>
+                    </section>
+                    <div class="btn-r">
+                        <a href="/product/editar/<%=notas.id %>">editar</a>
+                        <form action="/product/eli/<%=notas.id %>?_method=DELETE" method="POST">
+                            <button type="submit">eliminar</button>
+                        </form>
+                    </div>
+                </section>
+            <% } %>  
+        </div>
+    </main>
+</body>
+</html>
