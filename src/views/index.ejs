@@ -16,19 +16,19 @@
                 <a href="/product/registra">Agregar nota</a>
 
             </section>
-            <% for(let notas of ps) { %>
+            <% for(let notas = 1; notas < ps.length; notas ++) { %>
                 <section class="notas">
                     <section class="h">
                         <div class="titulo-btn">
-                            <label class="titulo"><%=notas.titulo  %> </label>
+                            <label class="titulo"><%= ps[notas].titulo  %> </label>
                         </div>
                         <div class="descripcion">
-                            <p><%=notas.description%></p>
+                            <p><%=ps[notas].description%></p>
                         </div>
                     </section>
                     <div class="btn-r">
-                        <a href="/product/editar/<%=notas.id %>">editar</a>
-                        <form action="/product/eli/<%=notas.id %>?_method=DELETE" method="POST">
+                        <a href="/product/editar/<%=ps[notas].id %>">editar</a>
+                        <form action="/product/eli/<%=ps[notas].id %>?_method=DELETE" method="POST">
                             <button type="submit">eliminar</button>
                         </form>
                     </div>
