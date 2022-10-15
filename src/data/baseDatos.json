@@ -6,12 +6,20 @@
  },
  {
   "id": 2,
-  "titulo": "spring 4",
-  "description": "Entrega para el 20 de octubre."
+  "titulo": "spring 4 ",
+  "description": "Entrega para el 20 de octubre. falta solo agregar img y listo.",
+  "img": "1665815044801Online report_Isometric.svg"
  },
  {
   "id": 3,
-  "titulo": "Rutina del gym ",
-  "description": "lunes = pecho y hombro ; miercoles = piernas ; viernes = espalda y brazos."
+  "titulo": "vamos al trabajo",
+  "description": "hacer lo que queda pendiente en el trabajo.",
+  "img": "1665813309564avatar.svg"
+ },
+ {
+  "id": 4,
+  "titulo": "vamos que vamos  ",
+  "description": "buenos dias ",
+  "img": "1665815576837Production_Two Color.svg"
  }
 ]

@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <form class="contenedor" action="/product/regis" method="POST">
+        <form class="contenedor" action="/product/regis" method="POST" enctype="multipart/form-data">
             <div class="arriba">
                 <h2>Agregar nota</h2>
                 <a id="volver" href="/">volver</a>
@@ -16,6 +16,10 @@
             <div class="titulo">
                 <label>Titulo de la nota:</label>
                 <input name="titulo" type="text">
+            </div>
+            <div class="titulo">
+                <label>Agregar imagen (que sean .svg)</label>
+                <input type="file" name="imgProduct" accept=".svg" required>
             </div>
             <div class="titulo">
                 <label>Descripcion de la nota:</label>

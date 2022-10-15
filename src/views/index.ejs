@@ -18,6 +18,10 @@
 
             </section>
             <% for(let notas = 1; notas < ps.length; notas ++) { %>
+            <div class="cont">
+                <section class="img">
+                    <img src="/img/<%= ps[notas].img %> " >
+                </section>
                 <section class="notas">
                     <section class="h">
                         <div class="titulo-btn">
@@ -35,7 +39,9 @@
                         </form>
                     </div>
                 </section>
+            </div>    
             <% } %>  
+            
         </div>
     </main>
 </body>

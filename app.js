@@ -18,19 +18,19 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
+// ejs
+
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname,'./src/views'));
+
 // ruta global 
 
 app.use('/', mainRoutes);
 app.use('/product', productRoutes);
 
 
-// ejs
-
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname,'./src/views'));
-
 // servidor 
 
-app.listen(process.env.PORT || 3002 ,function(){
-    console.log('run server');
+app.listen(process.env.PORT || 3006 ,function(){
+    console.log('run server 3006');
 });
